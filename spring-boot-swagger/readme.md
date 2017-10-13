@@ -1,4 +1,5 @@
 #说明
+
 本项目是对swagger和spring-boot的整合。
 
 跑起来后访问：[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
@@ -20,6 +21,7 @@ swagger就解决了这些问题,有文档有测试页，连参数都能帮你搞
 综上所述，我认为swagger的核心思想就是**代码即文档**。
 
 ##注意事项
+
 - Swagger2Config.java中的那个**包名**；
 - @ApiImplicitParam的paramType，可查看源码看它的取值范围（path,body,query）；
 
