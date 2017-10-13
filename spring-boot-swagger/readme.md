@@ -23,17 +23,17 @@ swagger就解决了这些问题,有文档有测试页，连参数都能帮你搞
 ## 注意事项
 
 - Swagger2Config.java中的那个**包名**；
-```java
-@Bean
-public Docket createRestApi() {
-    return new Docket(DocumentationType.SWAGGER_2)
-            .apiInfo(apiInfo())
-            .select()
-            .apis(RequestHandlerSelectors.basePackage("com.spring.test.swagger.controller"))//注意这个包名
-            .paths(PathSelectors.any())
-            .build();
-}
-```
+	```java
+	@Bean
+	public Docket createRestApi() {
+	    return new Docket(DocumentationType.SWAGGER_2)
+	            .apiInfo(apiInfo())
+	            .select()
+	            .apis(RequestHandlerSelectors.basePackage("com.spring.test.swagger.controller"))//注意这个包名
+	            .paths(PathSelectors.any())
+	            .build();
+	}
+	```
 - @ApiImplicitParam的paramType，可查看源码看它的取值范围（path,body,query）；
 
 
